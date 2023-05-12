@@ -22,7 +22,7 @@
 	    opacity: .8;
     }
     #introduction{
-      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+      background: url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
       background-repeat:  no-repeat;
       height: 95vh;
       background-size: cover;
@@ -66,8 +66,8 @@
         </div>
 
         <div class="">
-          <div class="card mt-4 mx-4 p-4 ">
-            <h1 class="text-center card-title">Web Developer</h1>
+          <div class="card mt-4 mx-4 p-4 " style="background-color: rgba(0, 0, 0, .5); color: white; ">
+            <h1 class="text-center card-title ">Web Developer</h1>
             <p class="">1 year of experience designing and developing user interfaces, testing, debugging, and adding new technologies to optimize web functionalities that improve data retrieval and workflow efficiency.</p>
           </div>
         </div>
@@ -76,98 +76,23 @@
   
   </div>
   
-  <!-- Projects -->
   <div class="container">
-    <hr>
+    <!-- Projects -->
+    <hr />
     <h3>
       <small class="text-muted">Projects</small>
     </h3>
+    <div id="projects" class=" pt-3 d-flex gap-3 flex-wrap"></div>
 
-    <div class="row pt-3 d-flex">
-      <div class="col mb-3">
-        <div class="card shadow p-3 bg-body rounded mx-auto" style="width: 18rem;">
-          <img src="assets/digi-form.png" class="card-img-top" alt="digi-form">
-          <div class="card-body">
-            <h5 class="card-title">Digi-Form</h5>
-            <p class="card-text">Form built to improve the Agents' productivity.</p>
-            <p class="card-text">Transform simple clicks in a property's note ready to be sent.</p>
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <a 
-              href="https://annimus1.github.io/Digi-Form/src/App.html" 
-              class="btn btn-primary">Visit</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col mb-3">
-        <div class="card shadow p-3 bg-body rounded mx-auto" style="width: 18rem;">
-          <img src="assets/weather-app.png" class="card-img-top" alt="weather-app">
-          <div class="card-body">
-            <h5 class="card-title">Weather</h5>
-            <p class="card-text">Provides interesting data about the current weather of a specific city.</p>
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <a href="#" class="btn btn-primary">Visit</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col mb-3">
-        <div class="card shadow p-3 bg-body rounded mx-auto" style="width: 18rem;">
-          <img src="assets/hulu-clone.png" class="card-img-top" alt="hulu">
-          <div class="card-body">
-            <h5 class="card-title">Hulu clone</h5>
-            <p class="card-text">Updated list of series and trending movies.</p>
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <a href="https://hulu-clone-pearl-alpha.vercel.app/" class="btn btn-primary">Visit</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row pt-4 mb-5">
-      <div class="col mb-3">
-        <div class="card shadow p-3 bg-body rounded mx-auto" style="width: 18rem;">
-          <img src="assets/rick-and-morty.png" class="card-img-top" alt="rick-and-morty">
-          <div class="card-body">
-            <h5 class="card-title">Rick & Morty</h5>
-            <p class="card-text">Website based on rick and morty tv show.</p>
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <a href="https://react-rick-and-morty-gamma.vercel.app/" class="btn btn-primary">Visit</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col mb-3">
-        <div class="card shadow p-3 bg-body rounded mx-auto" style="width: 18rem;">
-          <img src="assets/freeCodeCamp-testimony.png" class="card-img-top" alt="testimony">
-          <div class="card-body">
-            <h5 class="card-title">Testimonial page</h5>
-            <p class="card-text">A clone of testimonial page from FreeCodeCamp.</p>
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <a href="https://freecodecamp-foro.vercel.app/" class="btn btn-primary">Visit</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col mb-3">
-        <div class="card shadow p-3 bg-body rounded mx-auto" style="width: 18rem;">
-          <img src="assets/websitebootstrap.png" class="card-img-top" alt="bootstrap web">
-          <div class="card-body">
-            <h5 class="card-title">Bootstrap website</h5>
-            <p class="card-text">A small website to explore bootstrap functions.</p>
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <a href="https://annimus1.github.io/bootstrap-web/" class="btn btn-primary">Visit</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <!-- Certifications -->
+    <hr />
+    <h3>
+      <small class="text-muted">Certifications</small>
+    </h3>
+    <div id="certification" class=" pt-3 d-flex gap-3 flex-wrap"></div>
+    
+    
     <!-- Contact From -->
     <hr id="contact">
     <h3 class="mb-4">
@@ -285,5 +210,8 @@
     });
   });
   </script>
+
+  <script src="projects.js"></script>
+
 </body>
 </html>
