@@ -43,7 +43,7 @@ const projects = [
   },
   {
     title:"Car Workshop",
-    description:".",
+    description:"Mockup Carshop service website with a call to action button and background slides animation.",
     image:"assets/car-landingpage.png",
     link:"https://annimus1.github.io/car-workshop/"
   },
@@ -54,22 +54,22 @@ const projects = [
     link:"https://annimus1.github.io/bootstrap-web/"
   },
   {
-    title:"Marvel's Avengers Cards",
-    description:".",
-    image:"assets/avengers-card.png",
-    link:"https://annimus1.github.io/car-workshop/"
-  },
-  {
     title:"Rick & Morty",
     description:"Website based on rick and morty tv show.",
     image:"assets/rick-and-morty.png",
     link:"https://react-rick-and-morty-gamma.vercel.app/"
   },
   {
+    title:"Marvel's Avengers",
+    description:"Marvel Avengers Interactive cards.",
+    image:"assets/avengers-card.png",
+    link:"https://annimus1.github.io/marvels-avengers/"
+  },
+  {
     title:"Testimonial page",
     description:"A clone of testimonial page from FreeCodeCamp.",
     image:"assets/freeCodeCamp-testimony.png",
-    link:"https://freecodecamp-foro.vercel.app/"
+    link:"https://freecodecamp-foro-git-master-annimus1.vercel.app/"
   },
 ]
 
@@ -77,11 +77,11 @@ const projects = [
 projects.forEach( p => {
   projectsTemplate += `
   <div class="col mb-3">
-    <div class="card shadow p-3 bg-body rounded mx-auto" style="width: 18rem;">
+    <div class="card shadow p-3 bg-body rounded mx-auto" style="width: 18rem; height: 24rem">
       <img src=${p.image} class="card-img-top" alt=${p.title}>
       <div class="card-body">
-        <h5 class="card-title">${p.title}</h5>
-        <p class="card-text">${p.description}</p>
+        <h5 class="card-title align-center">${p.title}</h5>
+        <p class="card-text" style="height: 7rem">${p.description}</p>
         <div class="d-grid gap-2 col-6 mx-auto">
           <a 
           target="blank"
