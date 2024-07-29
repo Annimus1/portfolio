@@ -1,35 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Bootstrap -->
-  <link 
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-  rel="stylesheet" 
-  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-  crossorigin="anonymous"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
   <!-- Bootstrap Icons -->
-  <link 
-    rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
   <title>Pablo Vergara</title>
-  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/ios-filled/50/null/opened-folder.png">
-  <style>
-    .navbar{
-	    opacity: .8;
-    }
-    #introduction{
-      background: url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
-      background-repeat:  no-repeat;
-      height: 95vh;
-      background-size: cover;
-      background-attachment: fixed;
-      z-index: -1;
-    }
-  </style>
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/ios-filled/50/null/opened-folder.png"/>
+  <link rel="stylesheet" href="src/css/main.css"/>
 </head>
 
 <body>
@@ -37,11 +22,7 @@
   <nav class="navbar sticky-top navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand">
-        <img 
-          src="assets/avatar.jpg" 
-          alt="icon" 
-          width="30" 
-          height="30" 
+        <img src="assets/avatar.jpg" alt="icon" width="30" height="30"
           class="d-inline-block align-text-top rounded-pill">
         Pablo Vergara
       </a>
@@ -49,33 +30,40 @@
       <a href="#contact" id="contact-btn" class="btn btn-primary">Contact me</a>
     </div>
   </nav>
+  
   <div class="bg-custom"></div>
-      
+
   <!-- Introduction -->
   <div id="introduction">
     <div class="container d-flex h-100">
-      <div class="d-flex flex-column flex-md-row mx-auto my-auto">
+      <div class="d-flex flex-column flex-md-row mx-auto my-auto justify-content-center align-items-center">
         <div class="mx-auto">
-          <img src="assets/pablo.jpg"
-            id="photo"
-            width="250"
-            height="250"                
-            alt="photo"
-            class="rounded-circle" 
-          />          
+          <img src="assets/pablo.jpg" id="photo" width="350" height="350" alt="photo" class="rounded-circle" />
         </div>
 
-        <div class="">
-          <div class="card mt-4 mx-4 p-4 " style="background-color: rgba(0, 0, 0, .5); color: white; ">
-            <h1 class="text-center card-title ">Web Developer</h1>
-            <p class="">1 year of experience designing and developing user interfaces, testing, debugging, and adding new technologies to optimize web functionalities that improve data retrieval and workflow efficiency.</p>
+        <div id="text">
+          <div class="card mt-4 mx-4 p-4 " style="background-color: rgba(0, 0, 0, .7); color: white; ">
+            <h1 class="text-center card-title">Hi I'm Pablo Vergara</h1>
+            <p class="fs-4 fs-sm-6 p">A venezuelan Software Developer with a solid foundation in cutting-edge
+              technologies like
+              JavaScript, Python, HTML5, Java, SQL, my passion for development shines through in every line of code I
+              write. My primary focus has been on frontend development with tecnologies like React & tailwind Css, where
+              I have honed my ability to create engaging and functional user experiences. However, my thirst for
+              knowledge has led me to delve into the world of backend development, specifically with Java and Spring
+              Boot, where I am excited to explore new possibilities and challenges.</p>
+            <p class="fs-4 fs-sm-6 p">My background is not only about applying current technologies but also about
+              quickly
+              adapting to new tools and development environments. I firmly believe in combining creativity with logic to
+              build software products that are not only visually appealing but also efficient and robust in their
+              functionality.</p>
           </div>
         </div>
 
+      </div>
+
     </div>
-  
   </div>
-  
+
   <div class="container">
     <!-- Projects -->
     <hr />
@@ -91,8 +79,8 @@
       <small class="text-muted">Certifications</small>
     </h3>
     <div id="certification" class=" pt-3 d-flex gap-3 flex-wrap"></div>
-    
-    
+
+
     <!-- Contact From -->
     <hr id="contact">
     <h3 class="mb-4">
@@ -101,23 +89,13 @@
 
     <form class="card shadow p-3 mb-5 bg-body rounded">
       <div class="mb-3">
-        <label
-          for="phone" 
-          class="form-label"
-        >Your phone number</label>
-        <input 
-          class="form-control" 
-          type="phone"
-          id="phone" 
-          placeholder="+1 425 555-0100" />
+        <label for="phone" class="form-label">Your phone number</label>
+        <input class="form-control" type="phone" id="phone" placeholder="+1 425 555-0100" />
       </div>
 
       <div class="mb-3">
-        <label
-          for="message" 
-          class="form-label"
-        >Message</label>
-        <textarea class="form-control" id="message" rows="3"></textarea>  
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
       </div>
 
       <div class="d-flex flex-row-reverse">
@@ -126,92 +104,84 @@
     </form>
   </div>
 
+
   <!-- Footer -->
   <footer class="bg-dark">
     <div class="d-flex flex-column flex-md-row justify-content-between p-3">
       <!-- social media -->
       <div>
-        <a href="https://wa.me/+584245250232" class=" d-flex text-white text-decoration-none" >
+        <a href="https://wa.me/+584245250232" class=" d-flex text-white text-decoration-none">
           <p class="mr-2"><i class="bi bi-whatsapp"></i> Whatsapp</p>
         </a>
 
-        <a href="https://www.facebook.com/profile.php?id=100051001007944" class=" d-flex text-white text-decoration-none" >
+        <a href="https://www.facebook.com/profile.php?id=100051001007944"
+          class=" d-flex text-white text-decoration-none">
           <p class="mr-2"><i class="bi bi-facebook"></i> Facebook</p>
         </a>
 
-        <a href="https://www.instagram.com/swalcker/" class=" d-flex text-white text-decoration-none" >
+        <a href="https://www.instagram.com/swalcker/" class=" d-flex text-white text-decoration-none">
           <p class="mr-2"><i class="bi bi-instagram"></i> Instagram</p>
         </a>
 
-        <a href="https://github.com/Annimus1" class=" d-flex text-white text-decoration-none" >
+        <a href="https://github.com/Annimus1" class=" d-flex text-white text-decoration-none">
           <p class="mr-2"><i class="bi bi-github"></i> Github</p>
-        </a>        
+        </a>
       </div>
 
-      <hr class="text-white d-sm-block d-md-none"/>
-      
+      <hr class="text-white d-sm-block d-md-none" />
+
       <!-- info -->
-      <div class="d-flex flex-column text-white" >
-        <address ><i class="bi bi-geo-alt"></i> Barinas, Venezuela</address>
-        <p>
-          <a href="tel:+58-424-525-0232" class="text-white text-decoration-none">
-            <i class="bi bi-telephone-forward"></i> <strong>+58 424-525-0232</strong>
-          </a>
-        </p>
-        <p><i class="bi bi-envelope-at"></i> Pablo.j98@gmail.com</p>
-        <p><i class="bi bi-envelope-at"></i> Pablo.j98@hotmail.com</p>
+      <div class="d-flex flex-column text-white">
+        <address><i class="bi bi-geo-alt"></i>Venezuela</address>
       </div>
 
-      <hr class="text-white d-sm-block d-md-none"/>
-        
-        <!-- copyright -->
-       <div class="h-100 d-flex flex-column"> 
+      <hr class="text-white d-sm-block d-md-none" />
+
+      <!-- copyright -->
+      <div class="h-100 d-flex flex-column">
         <p class="text-white">© 2023 Pablo Vergara</p>
-        <p class="text-white">
-          Image by <a class="text-white" href="https://unsplash.com/es/@lucabravo">Luca Bravo</a>
-        </p>
-        <p class="text-white" >Opened Folder icon by <a class="text-white" href="https://icons8.com/icon/2939/opened-folder" title="folder icons">Icons8</a></p>
       </div>
     </div>
   </footer>
 
-  <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-    const mailBtn = document.getElementById("mail-btn");  
-    const message = document.getElementById("message"); 
+    const mailBtn = document.getElementById("mail-btn");
+    const message = document.getElementById("message");
     const phone = document.getElementById("phone");
 
-    function sendMail(){
+    function sendMail() {
       let data = message.value + "%0A%0APhone: " + phone.value;
       window.open(`mailto:pablo.j98@gmail.com?cc=pablo.j98@hotmail.com&body=${data}`);
     };
 
-    mailBtn.addEventListener('click',(e)=>{
+    mailBtn.addEventListener('click', (e) => {
       e.preventDefault();
       sendMail();
     });
 
 
-    $(document).ready(function(){
-    $("a").on('click', function(event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 900, function(){
-          window.location.hash = hash;
-        });
-      }
+    $(document).ready(function () {
+      $("a").on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+            window.location.hash = hash;
+          });
+        }
+      });
     });
-  });
   </script>
-
-  <script src="projects.js"></script>
+  <script src="src/js/projects.js"></script>
 
 </body>
+
 </html>
