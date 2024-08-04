@@ -94,13 +94,6 @@ const projects = [
     image:"assets/QA.png",
     link:"https://github.com/Annimus1/QA_CALCULATOR"
   },
-  // {
-  //   title:"Java Music Player",
-  //   description:"Music player build in java.",
-  //   image:"assets/Music.png",
-  //   link:"https://github.com/Annimus1/MusicPlayer"
-  // },
-
   {
     title:"Testimonial page",
     description:"A clone of testimonial page from FreeCodeCamp.",
