@@ -69,7 +69,12 @@ const projects = [
     image:"assets/rick-and-morty.png",
     link:"https://react-rick-and-morty-gamma.vercel.app/"
   },
-
+  {
+    title:"Music Player",
+    description:"A music player built in Java using Swing and Maven.",
+    image:"assets/music_player.png",
+    link:"https://github.com/Annimus1/MusicPlayer"
+  },
   {
     title:"Weather App",
     description:"Provides interesting data about the current weather of a specific city.",
@@ -107,7 +112,7 @@ projects.forEach( p => {
   projectsTemplate += `
   <div class="col mb-3">
     <div class="card shadow p-3 bg-body rounded mx-auto" style="width: 18rem; height: 24rem">
-      <img src=${p.image} class="card-img-top" alt=${p.title}>
+      <img src=${p.image} class="card-img-top projectImage" alt=${p.title}>
       <div class="card-body">
         <h5 class="card-title align-center">${p.title}</h5>
         <p class="card-text" style="height: 7rem">${p.description}</p>

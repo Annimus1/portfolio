@@ -43,6 +43,12 @@
   margin-bottom: 150px;
 }
 
+.projectImage{
+ max-height: 125px;
+ width: auto;
+ object-fit: scale-down;
+}
+
 @media only screen and (min-width: 350px) {
   #photo{
     height: 250px;
