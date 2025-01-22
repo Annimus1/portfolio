@@ -13,35 +13,35 @@ const certifications = [
   {
     name: "Aprende a programar con Python",
     platfrom:"mastermind",
-    link: "https://mastermind.ac/usuario/certificado/9f621b781a804391a9938a67cd8d8d73"
+    link: "assets/certifications/python_cert.pdf"
   },
 
   {
     name: "Fundamentos de Programación con Node.js",
     platfrom:"mastermind",
-    link: "https://mastermind.ac/usuario/certificado/90c1ebe8e3ad441d87b4da0fd1ebfd1b"
+    link: "assets/certifications/Node_cert.pdf"
   },
   // {
   //   name:"Todo sobre la web con PHP",
   //   platfrom:"mastermind",
-  //   link:""
+  //   link:"assets/certifications/php_cert.pdf"
   // },
   // {
   //   name:"Git: ¡de Noob a Pro!",
   //   platfrom:"mastermind",
-  //   link:""
+  //   link:"assets/certifications/git_cert.pdf"
   // },
   
   {
     name: "Diseño de Bases de Datos Relacionales con MySQL",
     platfrom:"mastermind",
-    link: "https://mastermind.ac/usuario/certificado/ca4c285619764db18e89ba55b7538fa7"
+    link: "assets/certifications/mysql_cert.pdf"
   },
 
   {
     name: "Aprende Java y Programación Orientada a Objetos",
     platfrom:"mastermind",
-    link: "https://mastermind.ac/usuario/certificado/aa63d221cffe4c2a897d1ff2c74fff62"
+    link: "assets/certifications/java_cert.pdf"
   },
   
 ]
@@ -146,7 +146,7 @@ function certificationTemplate(props){
           <a 
           target="blank"
           href=${props.link} 
-          class="btn btn-primary">View online</a>
+          class="btn btn-primary no-wrap">View online</a>
         </div>
       </div>
     </div>

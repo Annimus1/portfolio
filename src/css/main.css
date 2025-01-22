@@ -39,6 +39,10 @@
   height: auto;
 }
 
+.no-wrap{
+  text-wrap: nowrap;
+}
+
 .mb{
   margin-bottom: 150px;
 }
