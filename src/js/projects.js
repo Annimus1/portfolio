@@ -1,42 +1,47 @@
+// get containers from html
 const projectsContainer = document.getElementById("projects")
 const certificationContainer = document.getElementById("certification")
 
-let projectsTemplate = ""
-let certificationsTemplate = ""
 
+// variables to save the content
+let projectsContent = ""
+let certificationsContent = ""
+
+
+// representation of content
 const certifications = [
   {
     name: "Aprende a programar con Python",
     platfrom:"mastermind",
-    link: "https://mastermind.ac/certificates/9f621b781a804391a9938a67cd8d8d73"
+    link: "https://mastermind.ac/usuario/certificado/9f621b781a804391a9938a67cd8d8d73"
   },
 
   {
     name: "Fundamentos de Programación con Node.js",
     platfrom:"mastermind",
-    link: "https://mastermind.ac/certificates/90c1ebe8e3ad441d87b4da0fd1ebfd1b"
+    link: "https://mastermind.ac/usuario/certificado/90c1ebe8e3ad441d87b4da0fd1ebfd1b"
   },
   // {
   //   name:"Todo sobre la web con PHP",
   //   platfrom:"mastermind",
-  //   link:"https://mastermind.ac/certificates/5483b37cfb924dcdb02a194a24c88a42"
+  //   link:""
   // },
   // {
   //   name:"Git: ¡de Noob a Pro!",
   //   platfrom:"mastermind",
-  //   link:"https://mastermind.ac/certificates/442e7d1307424402a10bc515968dd825"
+  //   link:""
   // },
   
   {
     name: "Diseño de Bases de Datos Relacionales con MySQL",
     platfrom:"mastermind",
-    link: "https://mastermind.ac/certificates/ca4c285619764db18e89ba55b7538fa7"
+    link: "https://mastermind.ac/usuario/certificado/ca4c285619764db18e89ba55b7538fa7"
   },
 
   {
     name: "Aprende Java y Programación Orientada a Objetos",
     platfrom:"mastermind",
-    link: "https://mastermind.ac/certificates/aa63d221cffe4c2a897d1ff2c74fff62"
+    link: "https://mastermind.ac/usuario/certificado/aa63d221cffe4c2a897d1ff2c74fff62"
   },
   
 ]
@@ -45,106 +50,123 @@ const projects = [
   {
     title:"Digi-Form",
     description:`Form built to improve the Agents' productivity. Transform simple clicks in a property's note ready to be sent.`,
-    image:"assets/digi-form.png",
+    image:"assets/images/digi-form.png",
     link:"https://digi-form.vercel.app/"
   },
 
   {
     title:"Monstercat",
     description:`A small practice to know how to play audio and video from a server using ReactJs based on Monstercat.`,
-    image:"assets/monstercat-practice.png",
+    image:"assets/images/monstercat-practice.png",
     link:"https://monstercat-practice.vercel.app/"
   },
 
   {
     title:"Hulu clone",
     description:"Updated list of series and trending movies.",
-    image:"assets/hulu-clone.png",
+    image:"assets/images/hulu-clone.png",
     link:"https://hulu-clone-pearl-alpha.vercel.app/"
   },
 
   {
     title:"Rick & Morty",
     description:"Website based on rick and morty tv show.",
-    image:"assets/rick-and-morty.png",
+    image:"assets/images/rick-and-morty.png",
     link:"https://react-rick-and-morty-gamma.vercel.app/"
   },
   {
     title:"Music Player",
     description:"A music player built in Java using Swing and Maven.",
-    image:"assets/music_player.png",
+    image:"assets/images/music_player.png",
     link:"https://github.com/Annimus1/MusicPlayer"
   },
   {
     title:"Weather App",
     description:"Provides interesting data about the current weather of a specific city.",
-    image:"assets/weather-app.png",
+    image:"assets/images/weather-app.png",
     link:"https://weather-app-blue-three.vercel.app/"
   },
   {
     title:"Car Workshop",
     description:"Mockup Carshop service website with a call to action button and background slides animation.",
-    image:"assets/car-landingpage.png",
+    image:"assets/images/car-landingpage.png",
     link:"https://annimus1.github.io/car-workshop/"
   },
   {
     title:"Abstract Help Page",
     description:"Recreation of the Abstract's Help page as chalenge from frontendpractice.",
-    image:"assets/Abstract.png",
+    image:"assets/images/Abstract.png",
     link:"https://abstract-help-page-henna.vercel.app/"
   },
   {
     title:"QA Calculator",
     description:"This app helps to QA_Rating's members to qualify leads.",
-    image:"assets/QA.png",
+    image:"assets/images/QA.png",
     link:"https://github.com/Annimus1/QA_CALCULATOR"
   },
   {
     title:"Testimonial page",
-    description:"A clone of testimonial page from FreeCodeCamp.",
-    image:"assets/freeCodeCamp-testimony.png",
+    description:"A clone of testimonial page from FreeCodeCamprops.",
+    image:"assets/images/freeCodeCamp-testimony.png",
     link:"https://freecodecamp-foro.vercel.app/"
   },
 ]
 
 
-projects.forEach( p => {
-  projectsTemplate += `
+// functions 
+function projectTemplate(props){
+  // convert object to html card representing a single project
+  return `
   <div class="col mb-3">
     <div class="card shadow p-3 bg-body rounded mx-auto" style="width: 18rem; height: 24rem">
-      <img src=${p.image} class="card-img-top projectImage" alt=${p.title}>
+      <img src=${props.image} class="card-img-top projectImage" alt=${props.title}>
       <div class="card-body">
-        <h5 class="card-title align-center">${p.title}</h5>
-        <p class="card-text" style="height: 7rem">${p.description}</p>
+        <h5 class="card-title align-center">${props.title}</h5>
+        <p class="card-text" style="height: 7rem">${props.description}</p>
         <div class="d-grid gap-2 col-6 mx-auto">
           <a 
           target="blank"
-          href=${p.link} 
+          href=${props.link} 
           class="btn btn-primary">Visit</a>
         </div>
       </div>
     </div>
   </div>`
-}) 
+}
 
-certifications.forEach( c => {
-  certificationsTemplate += `
+function certificationTemplate(props){
+  // convert object to html card representing a single certification
+  return `
   <div class="col mb-3 ">
     <div class="h-100 card shadow p-3 bg-body rounded mx-auto" style="width: 18rem;">
-      <img src="assets/${c.platfrom}.jpg" class="card-img-top"  alt=${c.platfrom}>
+      <img src="assets/images/${props.platfrom}.jpg" class="card-img-top"  alt=${props.platfrom}>
       <div class="card-body">
-        <h5 class="card-title">${c.name}</h5>
+        <h5 class="card-title">${props.name}</h5>
         <div class="d-grid gap-2 col-6 mx-auto">
           <a 
           target="blank"
-          href=${c.link} 
+          href=${props.link} 
           class="btn btn-primary">View online</a>
         </div>
       </div>
     </div>
   </div>
   `
+}
+
+
+// filling up the content with all projects
+projects.forEach( project => {
+  projectsContent += projectTemplate(project);
+}) 
+
+// filling up the content with certifications
+certifications.forEach( certification => {
+  certificationsContent += certificationTemplate(certification)
 })
 
-projectsContainer.innerHTML = projectsTemplate
-certificationContainer.innerHTML = certificationsTemplate
+
+
+// adding info to the div container.
+projectsContainer.innerHTML = projectsContent
+certificationContainer.innerHTML = certificationsContent
