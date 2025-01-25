@@ -74,6 +74,15 @@ const projects = [
     image:"assets/images/digi-form.png",
     link:"https://digi-form.vercel.app/"
   },
+  {
+    title:"Refrigeracion Carmona",
+      description:{
+        es:"Landing Page destinada a dar a conocer nuestros servicios en refrigeracion industrial y domestica.",
+        en:"Landing Page intended to publicize our services in industrial and domestic refrigeration."
+      },
+      image:"assets/images/RCarmona.png",
+      link:"https://refrigerarion-carmona.vercel.app/"
+  },
 
   {
     title:"Monstercat",
